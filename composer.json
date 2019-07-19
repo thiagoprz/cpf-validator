@@ -1,5 +1,5 @@
 {
-    "name": "thiago/cpf-validator",
+    "name": "thiagoprz/cpf-validator",
     "description": "Laravel package to validate CPF (Brazilian taxpayer identification number)",
     "authors": [
         {
