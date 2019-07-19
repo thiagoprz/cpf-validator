@@ -1,0 +1,39 @@
+{
+    "name": "thiago/cpf-validator",
+    "description": "Laravel package to validate CPF (Brazilian taxpayer identification number)",
+    "authors": [
+        {
+            "name": "Thiago Przyczynski",
+            "email": "przyczynski@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Thiagoprz\\CpfValidator\\CpfServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Thiagoprz\\CpfValidator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Thiagoprz\\CpfValidator\\Test\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "require": {
+        "php": "^7.1.3",
+        "laravel/framework": "^5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.3@dev",
+        "orchestra/testbench": "^3.8"
+    }
+}
