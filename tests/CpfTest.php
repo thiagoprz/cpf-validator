@@ -40,6 +40,7 @@ class CpfTest extends TestCase
         foreach ($this->valid_identifiers as $identifier) {
             $this->assertTrue($this->rule->passes('identifier', $identifier));
         }
+        $this->assertTrue($this->rule->passes('identifier', '', ['nullable' => true]));
     }
 
     /**

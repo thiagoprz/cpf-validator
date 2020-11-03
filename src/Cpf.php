@@ -28,8 +28,11 @@ class Cpf extends Rule
      * @param  mixed  $value
      * @return bool
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value, $parameters = [])
     {
+        if (!empty($parameters) && $parameters[0] == true) {
+            return true;
+        }
         // Extracting only numbers since the value can be using a mask
         $cpf = preg_replace( '/[^0-9]/is', '', $value);
         // Check size number

@@ -28,6 +28,7 @@ class CpfController extends Controller
     {
         $this->validate($request, [
             'cpf' => 'cpf', // CPF validation
+            'cpf2' => 'cpf:true', // CPF validation allowing empty value
             ...
         ]);
         ...
