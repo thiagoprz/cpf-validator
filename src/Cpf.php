@@ -30,7 +30,7 @@ class Cpf extends Rule
      */
     public function passes($attribute, $value, $parameters = [])
     {
-        if (!empty($parameters) && $parameters[0] == true) {
+        if (!empty($parameters) && $parameters[0] == true && $value == '') {
             return true;
         }
         // Extracting only numbers since the value can be using a mask
